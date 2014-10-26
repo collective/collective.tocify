@@ -26,15 +26,16 @@
  */
 
 define([
-  'mockup-patterns-base',
+  'pat-base',
   'jquery'
 ], function (Base, $) {
   'use strict';
 
   var Minimalpattern = Base.extend({
     name: 'minimalpattern',
+    trigger: '.pat-minimalpattern',  // has to be exact like this: 'pat-' + patternname.
     defaults: {
-      text: 'ey, ya!'
+      text: 'Super Duper!'
     },
     init: function () {
       var self = this;

@@ -1,0 +1,63 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:plone="http://namespaces.plone.org/plone"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:gs="http://namespaces.zope.org/genericsetup"
+           xmlns:zcml="http://namespaces.zope.org/zcml">
+
+  <include package="plone.resource" file="meta.zcml"/>
+  <plone:static
+      directory="js"
+      type="plone"
+      name="minimalpattern"
+      />
+
+  <!-- TODO: see, why Plone 4 cannot access plone.resource directory from above ^^^ -->
+  <browser:resourceDirectory
+      directory="js"
+      name="minimalpattern"
+      />
+
+  <browser:page
+      name="minimalpatterndemo"
+      for="*"
+      template="minimalpatterndemo.pt"
+      permission="zope2.View"
+      />
+
+  <!-- Plone 5 profiles -->
+  <configure zcml:condition="have plone-5">
+    <gs:registerProfile
+        name="default"
+        title="mockup.minimalpattern Plone 5 Install"
+        directory="profiles/plone5"
+        description="Minimal mockup pattern demo. Installation for Plone 5"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+    <gs:registerProfile
+        name="uninstall"
+        title="mockup.minimalpattern Plone 5 Uninstall"
+        directory="profiles/plone5uninstall"
+        description="Minimal mockup pattern demo. Uninstallation for Plone 5"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+  </configure>
+
+  <!-- Plone 4 profiles -->
+  <configure zcml:condition="not-have plone-5">
+    <gs:registerProfile
+        name="default"
+        title="mockup.minimalpattern Plone 4 Install"
+        directory="profiles/plone4"
+        description="Minimal mockup pattern demo. Installation for Plone 4"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+    <gs:registerProfile
+        name="uninstall"
+        title="mockup.minimalpattern Plone 4 Uninstall"
+        directory="profiles/plone4uninstall"
+        description="Minimal mockup pattern demo. Uninstallation for Plone 4"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+  </configure>
+
+</configure>

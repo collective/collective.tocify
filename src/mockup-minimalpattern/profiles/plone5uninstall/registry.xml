@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<registry>
+  <records remove="True" prefix="plone.resources/mockup-patterns-minimalpattern" interface='Products.CMFPlone.interfaces.IResourceRegistry'/>
+  <records remove="True" prefix="plone.resources/mockup-bundles-minimalpattern"  interface='Products.CMFPlone.interfaces.IResourceRegistry'/>
+  <records remove="True" prefix="plone.bundles/minimalpattern"                   interface='Products.CMFPlone.interfaces.IBundleRegistry'/>
+</registry>
