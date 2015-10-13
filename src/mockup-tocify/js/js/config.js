@@ -8,8 +8,8 @@
     baseUrl: './',
     optimize: 'none',
     paths: {
-      'mockup-bundles-minimalpattern': 'js/bundles/minimalpattern',
-      'mockup-patterns-minimalpattern': 'patterns/minimalpattern/pattern',
+      'mockup-bundles-tocify': 'js/bundles/tocify',
+      'mockup-patterns-tocify': 'patterns/tocify/pattern',
       // FRAMEWORK DEPENDENCIES
       'expect': 'bower_components/expect/index',
       'jquery': 'bower_components/jquery/dist/jquery',

@@ -2,7 +2,7 @@
 <object name="portal_css">
 
   <stylesheet
-      id="++resource++minimalpattern/build/minimalpattern.min.css"
+      id="++resource++tocify/build/tocify.min.css"
       cacheable="True"
       compression="None"
       cookable="True"

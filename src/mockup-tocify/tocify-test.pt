@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master">
+<body>
+
+<metal:content-core fill-slot="content-core">
+<metal:block define-macro="content-core">
+  <div class="pat-tocify">
+      <h1>Tocify Test Content</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, odio non blandit facilisis, ipsum risus suscipit risus, eget aliquet magna diam a libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <h2>Sub Heading</h2>
+      <p>Praesent et tortor in tortor cursus tincidunt ut porttitor justo. Nam vel arcu at felis tempor dignissim. Aliquam id commodo nisl. Quisque in vulputate metus. Mauris sagittis, urna ultrices vehicula interdum, lectus lorem molestie magna, eget luctus velit nibh quis orci. Integer condimentum id leo sed facilisis.</p>
+      <p>In tempor ultrices justo nec hendrerit. Quisque egestas quam ut enim convallis vulputate. Pellentesque cursus leo ac tempor faucibus. Maecenas sit amet elit sollicitudin, vehicula libero sed, elementum ex. Donec varius quam nec urna feugiat condimentum. Ut condimentum tellus vel tempus feugiat. Fusce sit amet feugiat urna. Morbi sagittis hendrerit imperdiet. Sed facilisis eu mauris eu pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium tortor a nibh suscipit accumsan. Nam ut sem sagittis, molestie urna sed, vehicula leo. Suspendisse luctus diam et risus consectetur, nec efficitur nibh euismod.</p>
+
+      <h2>Another Sub Heading</h2>
+      <h3>Third Level Heading</h3>
+      <p>Cras dapibus augue varius quam efficitur, at tempor nisi mattis. Ut tincidunt sem eros, sed dictum nulla elementum consequat. Nulla commodo lacinia porta. Proin vestibulum libero nec egestas gravida. Fusce ac odio a lacus pulvinar varius. Cras lectus ante, faucibus nec posuere sed, tempus ut metus. Aliquam erat volutpat. Maecenas porta lectus in ante malesuada, vitae consectetur nisi egestas. Aliquam efficitur varius placerat. Vivamus non tincidunt nisl, sed egestas lectus. Proin purus ex, vulputate non orci vitae, egestas ultricies lorem. Nam rhoncus mollis euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut elit quam, finibus sed egestas a, convallis id mauris. Etiam vel laoreet nisl.</p>
+  </div>
+</metal:block>
+</metal:content-core>
+
+</body>
+</html>

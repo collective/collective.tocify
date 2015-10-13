@@ -1,19 +1,18 @@
 <?xml version="1.0"?>
 <registry>
 
-  <records prefix="plone.resources/mockup-patterns-minimalpattern"
+  <records prefix="plone.resources/mockup-patterns-tocify"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-      <value key="js">++plone++minimalpattern/patterns/minimalpattern/pattern.js</value>
+      <value key="js">++plone++tocify/patterns/tocify/pattern.js</value>
       <value key="css">
-        <element>++plone++minimalpattern/patterns/minimalpattern/pattern.minimalpattern.less</element>
+        <element>++plone++tocify/patterns/tocify/pattern.tocify.less</element>
       </value>
   </records>
 
-  <records prefix="plone.bundles/minimalpattern"
+  <records prefix="plone.bundles/tocify"
             interface='Products.CMFPlone.interfaces.IBundleRegistry'>
     <value key="resources">
-      <element>mockup-patterns-minimalpattern</element>
-      <element>mockup-patterns-select2</element>
+      <element>mockup-patterns-tocify</element>
     </value>
     <value key="depends">plone</value>
     <value key="enabled">True</value>
@@ -23,7 +22,7 @@
 
   <records
       remove="True"
-      prefix="plone.resources/mockup-bundles-minimalpattern"
+      prefix="plone.resources/mockup-bundles-tocify"
       interface='Products.CMFPlone.interfaces.IResourceRegistry'/>
 
 </registry>

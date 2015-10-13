@@ -2,7 +2,7 @@
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
 
   <javascript
-      id="++resource++minimalpattern/build/minimalpattern.min.js"
+      id="++resource++tocify/build/tocify.min.js"
       cacheable="True"
       compression="None"
       cookable="True"

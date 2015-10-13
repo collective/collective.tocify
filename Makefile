@@ -28,7 +28,8 @@ endif
 
 
 # Make tasks
-all: test-once bundle-minimalpattern
+all: test-once bundle-tocify
+
 
 cleanplone:
 	# Remove buildout created Plone directories, except var
@@ -46,10 +47,10 @@ plone4: cleanplone
 	./bin/pip install zc.buildout
 	./bin/buildout -c buildout-plone4.cfg
 
-bundle-minimalpattern:
-	# Build minimalpattern bundle
+bundle-tocify:
+	# Build tocify bundle
 	mkdir -p build
-	NODE_PATH=$(NODE_PATH) $(GRUNT) bundle-minimalpattern $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-tocify/js/Gruntfile.js
+	NODE_PATH=$(NODE_PATH) $(GRUNT) bundle-tocify $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-tocify/js/Gruntfile.js
 
 bootstrap: clean
 	# Install node/bower dependencies
@@ -97,4 +98,4 @@ clean-deep: clean
 	if test -f $(NPM); then $(NPM) cache clean; fi
 
 # Expose these options to the command line shell expansion mechanism
-.PHONY: all plone plone4 bundle-minimalpattern bootstrap jshint watch test test-once test-dev clean clean-deep
+.PHONY: all plone plone4 bundle-tocify bootstrap jshint watch test test-once test-dev clean clean-deep

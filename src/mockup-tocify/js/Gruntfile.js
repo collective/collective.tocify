@@ -11,8 +11,8 @@ module.exports = function(grunt) {
   // Create a new insance of the Mockup grunt task suite
   var mockup = new MockupGrunt(requirejsOptions);
 
-  // Register the Minimalpattern pattern
-  mockup.registerBundle('minimalpattern');
+  // Register the Tocifypattern pattern
+  mockup.registerBundle('tocify');
 
   // initialize grunt and set up all tasks.
   mockup.initGrunt(grunt);

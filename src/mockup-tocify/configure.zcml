@@ -8,19 +8,19 @@
   <plone:static
       directory="js"
       type="plone"
-      name="minimalpattern"
+      name="tocify"
       />
 
   <!-- TODO: see, why Plone 4 cannot access plone.resource directory from above ^^^ -->
   <browser:resourceDirectory
       directory="js"
-      name="minimalpattern"
+      name="tocify"
       />
 
   <browser:page
-      name="minimalpatterndemo"
+      name="tocify-test"
       for="*"
-      template="minimalpatterndemo.pt"
+      template="tocify-test.pt"
       permission="zope2.View"
       />
 
@@ -28,16 +28,16 @@
   <configure zcml:condition="have plone-5">
     <gs:registerProfile
         name="default"
-        title="mockup.minimalpattern Plone 5 Install"
+        title="mockup.tocify Plone 5 Install"
         directory="profiles/plone5"
-        description="Minimal mockup pattern demo. Installation for Plone 5"
+        description="Mockup pattern for jquery tocify. Installation for Plone 5"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
     <gs:registerProfile
         name="uninstall"
-        title="mockup.minimalpattern Plone 5 Uninstall"
+        title="mockup.tocify Plone 5 Uninstall"
         directory="profiles/plone5uninstall"
-        description="Minimal mockup pattern demo. Uninstallation for Plone 5"
+        description="MMockup pattern for jquery tocify. Uninstallation for Plone 5"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
   </configure>
@@ -46,16 +46,16 @@
   <configure zcml:condition="not-have plone-5">
     <gs:registerProfile
         name="default"
-        title="mockup.minimalpattern Plone 4 Install"
+        title="mockup.tocify Plone 4 Install"
         directory="profiles/plone4"
-        description="Minimal mockup pattern demo. Installation for Plone 4"
+        description="Mockup pattern for jquery tocify. Installation for Plone 4"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
     <gs:registerProfile
         name="uninstall"
-        title="mockup.minimalpattern Plone 4 Uninstall"
+        title="mockup.tocify Plone 4 Uninstall"
         directory="profiles/plone4uninstall"
-        description="Minimal mockup pattern demo. Uninstallation for Plone 4"
+        description="Mockup pattern for jquery tocify. Uninstallation for Plone 4"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
   </configure>

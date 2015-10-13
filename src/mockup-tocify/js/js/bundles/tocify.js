@@ -1,7 +1,7 @@
 require([
   'jquery',  // We use jquery to search the DOM for pattern declarations.
   'pat-registry',  // We have to register
-  'mockup-patterns-minimalpattern'  // Depend on the patterns, you want to support in this bundle.
+  'mockup-patterns-tocify'  // Depend on the patterns, you want to support in this bundle.
 ], function($, Registry) {
   'use strict';
 
