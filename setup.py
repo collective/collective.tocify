@@ -6,7 +6,7 @@ package_json = json.load(open('package.json'))
 version = package_json['version']
 
 setup(
-    name='mockup-minimalpattern',
+    name='mockup-tocify',
     version=version,
     description="Extension to Mockup's patterns.",
     long_description='{0}\n{1}'.format(
@@ -21,7 +21,7 @@ setup(
     keywords='plone mockup',
     author='Plone Foundation',
     author_email='plone-developers@lists.sourceforge.net',
-    url='https://github.com/collective/mockup-minimalpattern',
+    url='https://github.com/collective/mockup-tocify',
     license='BSD',
     packages=find_packages('src'),
     package_dir={'': 'src'},

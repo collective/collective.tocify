@@ -1,7 +1,7 @@
 {
-  "name": "mockup-minimalpattern",
+  "name": "mockup-tocify",
   "version": "0.0.1",
-  "description": "Minimal pattern for learning pattern creation",
+  "description": "Mockup pattern for jquery tocify",
   "homepage": "http://plone.github.io/mockup",
   "devDependencies": {
     "bower": "~1.4.1",
@@ -38,18 +38,18 @@
   },
   "maintainers": [
     {
-      "name": "Johannes Raggam",
-      "email": "dev@programmatic.pro",
-      "url": "http://johannes.raggam.co.at/"
+      "name": "",
+      "email": "",
+      "url": ""
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/collective/mockup-minimalpattern.git"
+    "url": "https://github.com/collective/mockup-tocify.git"
   },
   "bugs": {
-    "url": "https://github.com/collective/mockup-minimalpattern/issues",
-    "email": "dev@programmatic.pro"
+    "url": "https://github.com/collective/mockup-tocify/issues",
+    "email": ""
   },
   "licenses": [
     {

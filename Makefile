@@ -49,7 +49,7 @@ plone4: cleanplone
 bundle-minimalpattern:
 	# Build minimalpattern bundle
 	mkdir -p build
-	NODE_PATH=$(NODE_PATH) $(GRUNT) bundle-minimalpattern $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-minimalpattern/js/Gruntfile.js
+	NODE_PATH=$(NODE_PATH) $(GRUNT) bundle-minimalpattern $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-tocify/js/Gruntfile.js
 
 bootstrap: clean
 	# Install node/bower dependencies
@@ -62,27 +62,27 @@ else
 	$(NPM) link
 endif
 	NODE_PATH=$(NODE_PATH) $(BOWER) install --config.interactive=0
-	NODE_PATH=$(NODE_PATH) $(GRUNT) sed:bootstrap $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-minimalpattern/js/Gruntfile.js
+	NODE_PATH=$(NODE_PATH) $(GRUNT) sed:bootstrap $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-tocify/js/Gruntfile.js
 
 jshint:
 	# Codecheck
-	NODE_PATH=$(NODE_PATH) $(GRUNT) jshint $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-minimalpattern/js/Gruntfile.js
+	NODE_PATH=$(NODE_PATH) $(GRUNT) jshint $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-tocify/js/Gruntfile.js
 
 watch:
 	# Run grunt and watch for changes.
-	NODE_PATH=$(NODE_PATH) $(GRUNT) watch $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-minimalpattern/js/Gruntfile.js
+	NODE_PATH=$(NODE_PATH) $(GRUNT) watch $(DEBUG) $(VERBOSE) --gruntfile=src/mockup-tocify/js/Gruntfile.js
 
 test:
 	# Run tests headless via PhantomJS and watch for changes.
-	NODE_PATH=$(NODE_PATH) $(GRUNT) test $(DEBUG) $(VERBOSE) --pattern=$(pattern) --gruntfile=src/mockup-minimalpattern/js/Gruntfile.js
+	NODE_PATH=$(NODE_PATH) $(GRUNT) test $(DEBUG) $(VERBOSE) --pattern=$(pattern) --gruntfile=src/mockup-tocify/js/Gruntfile.js
 
 test-once:
 	# Run the tests headless with PhantomJS only once and exit.
-	NODE_PATH=$(NODE_PATH) $(GRUNT) test_once $(DEBUG) $(VERBOSE) --pattern=$(pattern) --gruntfile=src/mockup-minimalpattern/js/Gruntfile.js
+	NODE_PATH=$(NODE_PATH) $(GRUNT) test_once $(DEBUG) $(VERBOSE) --pattern=$(pattern) --gruntfile=src/mockup-tocify/js/Gruntfile.js
 
 test-dev:
 	# Run the tests for Chromium and watch for changes.
-	NODE_PATH=$(NODE_PATH) $(GRUNT) test_dev $(DEBUG) $(VERBOSE) --pattern=$(pattern) --gruntfile=src/mockup-minimalpattern/js/Gruntfile.js
+	NODE_PATH=$(NODE_PATH) $(GRUNT) test_dev $(DEBUG) $(VERBOSE) --pattern=$(pattern) --gruntfile=src/mockup-tocify/js/Gruntfile.js
 
 clean:
 	# Cleanup the project and remove directories set up by previous tasks

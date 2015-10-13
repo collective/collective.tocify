@@ -1,7 +1,7 @@
 include *.rst
 recursive-include src *
-prune src/mockup-minimalpattern/js/bower_components
-prune src/mockup-minimalpattern/js/build
+prune src/mockup-tocify/js/bower_components
+prune src/mockup-tocify/js/build
 exclude .bowerrc
 exclude Makefile
 global-exclude *.pyc

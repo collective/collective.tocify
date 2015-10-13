@@ -1,6 +1,6 @@
 {
-  "name": "mockup-minimalpattern",
-  "description": "Minimal pattern for learning pattern creation",
+  "name": "mockup-tocify",
+  "description": "Mockup pattern for jquery tocify",
   "dependencies": {
     "mockup": "master"
   },
