@@ -10,11 +10,11 @@
 
   <div class="row">
     <div class="col-md-4">
-      <div class="pat-tocify">
+      <div class="pat-tocify" data-pat-tocify='{ "selectors" : "h1,h2,h3" }'>
       </div>
     </div>
     <div class="col-md-8">
-        <h1>Tocify Test Content</h1>
+        <h2>Tocify Test Content</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, odio non blandit facilisis, ipsum risus suscipit risus, eget aliquet magna diam a libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
         <h2>Sub Heading</h2>
