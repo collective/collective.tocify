@@ -32,15 +32,32 @@ define([
   'tocify'
 ], function (Base, $) {
   'use strict';
-
-
   var Tocify = Base.extend({
     name: 'tocify',
     trigger: '.pat-tocify',  // has to be exact like this: 'pat-' + patternname.
     parser: 'mockup',
     defaults: {
-      "selectors": "h2, h3",
-      "showAndHide": true
+      context: "body",
+      selectors: "h1,h2,h3",
+      showAndHide: true,
+      showEffect: "slideDown",
+      showEffectSpeed: "medium",
+      hideEffect: "none",
+      hideEffectSpeed: "medium",
+      smoothScroll: true,
+      smoothScrollSpeed: "medium",
+      scrollTo: 0,
+      showAndHideOnScroll: true,
+      highlightOnScroll: true,
+      highlightOffset: 40,
+      theme: "bootstrap",
+      extendPage: true,
+      extendPageOffset: 100,
+      history: true,
+      hashGenerator: "compact",
+      highlightDefault: true,
+      ignoreSelector: null,
+      scrollHistory: false
     },
     init: function () {
       var self = this;
