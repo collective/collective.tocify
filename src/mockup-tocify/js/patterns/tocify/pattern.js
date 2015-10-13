@@ -8,7 +8,7 @@ define([
 ], function (Base, $) {
   'use strict';
 
-  var Tocifypattern = Base.extend({
+  var Tocify = Base.extend({
     name: 'tocify',
     trigger: '.pat-tocify',  // has to be exact like this: 'pat-' + patternname.
     init: function () {
@@ -17,5 +17,5 @@ define([
       //self.tocify();
     }
   });
-  return Tocifypattern;
+  return Tocify;
 });
