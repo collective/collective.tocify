@@ -3,7 +3,7 @@
 
   <records prefix="plone.resources/mockup-patterns-tocify"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-      <value key="js">++plone++tocify/patterns/tocify/pattern.js</value>
+      <value key="js">++plone++tocify/bower_components/jquery.tocify.js/src/javascripts/jquery.tocify.min.js</value>
       <value key="css">
         <element>++plone++tocify/patterns/tocify/pattern.tocify.less</element>
       </value>

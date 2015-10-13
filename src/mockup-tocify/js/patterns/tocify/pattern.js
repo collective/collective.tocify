@@ -4,7 +4,8 @@
 
 define([
   'pat-base',
-  'jquery'
+  'jquery',
+  'tocify'
 ], function (Base, $) {
   'use strict';
 
@@ -13,8 +14,7 @@ define([
     trigger: '.pat-tocify',  // has to be exact like this: 'pat-' + patternname.
     init: function () {
       var self = this;
-      console.log('Tocify!!!!!');
-      //self.tocify();
+      self.$el.tocify();
     }
   });
   return Tocify;
