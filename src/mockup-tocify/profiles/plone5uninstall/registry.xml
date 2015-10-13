@@ -2,5 +2,7 @@
 <registry>
   <records remove="True" prefix="plone.resources/mockup-patterns-tocify" interface='Products.CMFPlone.interfaces.IResourceRegistry'/>
   <records remove="True" prefix="plone.resources/mockup-bundles-tocify"  interface='Products.CMFPlone.interfaces.IResourceRegistry'/>
+  <records remove="True" prefix="plone.resources/tocify"  interface='Products.CMFPlone.interfaces.IResourceRegistry'/>
+  <records remove="True" prefix="plone.resources/jquery-ui"  interface='Products.CMFPlone.interfaces.IResourceRegistry'/>
   <records remove="True" prefix="plone.bundles/tocify"                   interface='Products.CMFPlone.interfaces.IBundleRegistry'/>
 </registry>

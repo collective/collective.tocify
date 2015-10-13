@@ -10,8 +10,8 @@
     paths: {
       'mockup-bundles-tocify': 'js/bundles/tocify',
       'mockup-patterns-tocify': 'patterns/tocify/pattern',
-      'tocify': 'bower_components/jquery.tocify.js/src/javascripts/jquery.tocify.min',
-      'jquery-ui': 'bower_components/jquery-ui/ui',
+      'tocify': 'bower_components/jquery.tocify.js/src/javascripts/jquery.tocify',
+      'jquery-ui-widget': 'bower_components/jquery-ui/ui/widget',
       // FRAMEWORK DEPENDENCIES
       'expect': 'bower_components/expect/index',
       'jquery': 'bower_components/jquery/dist/jquery',
