@@ -9,20 +9,22 @@
       </value>
   </records>
 
+  <records prefix="plone.resources/mockup-bundles-tocify"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++tocify/js/bundles/tocify.js</value>
+    <value key="css">
+      <element>++plone++tocify/less/tocify.less</element>
+    </value>
+  </records>
+
   <records prefix="plone.bundles/tocify"
             interface='Products.CMFPlone.interfaces.IBundleRegistry'>
     <value key="resources">
-      <element>mockup-patterns-tocify</element>
+      <element>mockup-bundles-tocify</element>
     </value>
     <value key="depends">plone</value>
     <value key="enabled">True</value>
     <value key="compile">True</value>
   </records>
-
-
-  <records
-      remove="True"
-      prefix="plone.resources/mockup-bundles-tocify"
-      interface='Products.CMFPlone.interfaces.IResourceRegistry'/>
 
 </registry>
