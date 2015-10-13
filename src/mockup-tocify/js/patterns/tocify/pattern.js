@@ -1,6 +1,30 @@
 /* Tocifypattern
-
- */
+*
+* Options:
+*    selectors(string): The selectors used to build the table of contents.
+*
+* Documentation:
+*   # Tocify
+*
+*   This pattern creates a table of contents using jquery.tocify.js
+*   (see http://gregfranko.com/jquery.tocify.js for more information about
+*   tocify).
+*
+*   # Default text example
+*
+*   {{ example-1 }}
+*
+*   # Custom options example
+*
+*   {{ example-2 }}
+*
+* Example: example-1
+*    <div class="pat-tocify"></div>
+*
+* Example: example-2
+*    <div class="pat-tocify" data-pat-tocify='{"selectors": "h2, h3"}'></div>
+*
+*/
 
 define([
   'pat-base',
