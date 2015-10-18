@@ -12,7 +12,7 @@
         <value key="compile">True</value>
         <value key="jscompilation">++plone++tocify/tocify.min.js</value>
         <value key="csscompilation">++plone++tocify/tocify.css</value>
-        <value key="last_compilation">2015-10-18 11:00:00</value>
+        <value key="last_compilation">2015-10-18 12:48:00</value>
     </records>
 
     <!-- The Tocify Pattern resource -->
