@@ -43,7 +43,7 @@ In Google Chrome browser::
 
 
 Bootstrap Plone for testing the Plone integration
-----------------------------------------------------
+-------------------------------------------------
 
 Just use the provided ``make`` target commands (see ``Makefile``, for what they
 are doing).
@@ -60,3 +60,19 @@ For Plone 5::
 For Plone 4::
 
     $ make plone4
+
+Template example
+----------------
+Once you installed the Tocify add-on you can view the example page via::
+
+    /tocify-test
+
+Include mockup-tocify in your own templates like this::
+
+    <div class="pat-tocify"
+         data-pat-tocify='{ "selectors" : "h2,h3", ... }'>
+
+For all JSON options see jquery.tocify.js at [http://gregfranko.com/jquery.tocify.js].
+
+Note: The `data-pat-tocify` value needs to be written with single quotes and
+the json options with double quotes. The other way around won't work!
