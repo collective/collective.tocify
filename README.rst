@@ -2,7 +2,7 @@ Mockup pattern for jquery.tocify
 ================================
 
 This pattern creates a table of contents using jquery.tocify.js
-(see [http://gregfranko.com/jquery.tocify.js] for more information about
+(see http://gregfranko.com/jquery.tocify.js for more information about
 tocify).
 
 Bootstrap the JS environment for pattern development
