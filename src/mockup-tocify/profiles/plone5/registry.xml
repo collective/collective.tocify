@@ -1,44 +1,52 @@
 <?xml version="1.0"?>
 <registry>
 
-  <records prefix="plone.resources/mockup-patterns-tocify"
-            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-      <value key="js">++plone++tocify/patterns/tocify/pattern.js</value>
-      <value key="css">
-        <element>++plone++tocify/patterns/tocify/pattern.tocify.less</element>
-      </value>
-  </records>
+    <!-- The Tocify Bundle -->
+    <records prefix="plone.bundles/tocify"
+             interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+        <value key="resources">
+            <element>mockup-bundles-tocify</element>
+        </value>
+        <value key="depends">plone</value>
+        <value key="enabled">True</value>
+        <value key="compile">True</value>
+        <value key="jscompilation">++plone++tocify/tocify.min.js</value>
+        <value key="csscompilation">++plone++tocify/tocify.css</value>
+        <value key="last_compilation">2015-10-18 11:00:00</value>
+    </records>
 
-  <records prefix="plone.resources/mockup-bundles-tocify"
-            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-    <value key="js">++plone++tocify/js/bundles/tocify.js</value>
-    <value key="css">
-      <element>++plone++tocify/less/tocify.less</element>
-    </value>
-  </records>
+    <!-- The Tocify Pattern resource -->
+    <records prefix="plone.resources/mockup-patterns-tocify"
+             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+         <value key="js">++plone++tocify/patterns/tocify/pattern.js</value>
+         <value key="css">
+             <element>++plone++tocify/patterns/tocify/pattern.tocify.less</element>
+         </value>
+    </records>
 
-  <records prefix="plone.resources/jquery-ui"
+    <records prefix="plone.resources/mockup-bundles-tocify"
+             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+        <value key="js">++plone++tocify/js/bundles/tocify.js</value>
+        <value key="css">
+            <element>++plone++tocify/less/tocify.less</element>
+        </value>
+    </records>
+
+    <!-- The following bundles are required to build the bundle in the browser,
+       through the resource registry, or when using the pattern in development
+       mode -->
+    <records prefix="plone.resources/jquery-ui"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
     <value key="url">++plone++tocify/bower_components/jquery-ui/ui</value>
-  </records>
+    </records>
 
-  <records prefix="plone.resources/tocify"
+    <records prefix="plone.resources/tocify"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-    <value key="js">++plone++tocify/bower_components/jquery.tocify.js/src/javascripts/jquery.tocify.js</value>
-    <value key="css">
-      <element>++plone++tocify/less/tocify.less</element>
-    </value>
-    <value key="deps">jquery-ui-url/widget</value>
-  </records>
-
-  <records prefix="plone.bundles/tocify"
-            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
-    <value key="resources">
-      <element>mockup-bundles-tocify</element>
-    </value>
-    <value key="depends">plone</value>
-    <value key="enabled">True</value>
-    <value key="compile">True</value>
-  </records>
+        <value key="js">++plone++tocify/bower_components/jquery.tocify.js/src/javascripts/jquery.tocify.js</value>
+        <value key="css">
+            <element>++plone++tocify/less/tocify.less</element>
+        </value>
+        <value key="deps">jquery-ui-url/widget</value>
+    </records>
 
 </registry>
