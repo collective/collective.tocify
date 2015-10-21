@@ -1,0 +1,11 @@
+#contents{
+     width: 20em;
+     margin-top: 1em;
+     float: left;
+ }
+
+#content{
+    display: table;
+    margin-left: 21em;
+   float: left;
+}
