@@ -1,5 +1,5 @@
-Mockup pattern for jquery.tocify
-================================
+A tocify pattern for Plone
+==========================
 
 This pattern creates a table of contents using jquery.tocify.js
 (see http://gregfranko.com/jquery.tocify.js for more information about
@@ -13,7 +13,7 @@ Make sure, you have `GNU make`, `node` and `git` installed.
 Then::
 
     $ git clone (https://github.com/collective/mockup-tocify.git
-    $ cd mockup-tocify
+    $ cd collective.tocify
     $ make bootstrap
 
 Create the bundles (needed for development and Plone 4. For integration in

@@ -28,16 +28,16 @@
   <configure zcml:condition="have plone-5">
     <gs:registerProfile
         name="default"
-        title="mockup.tocify Plone 5 Install"
+        title="collective.tocify Plone 5 Install"
         directory="profiles/plone5"
-        description="Mockup pattern for jquery tocify. Installation for Plone 5"
+        description="A tocify pattern for Plone (pat-tocify). Installation for Plone 5"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
     <gs:registerProfile
         name="uninstall"
-        title="mockup.tocify Plone 5 Uninstall"
+        title="collective.tocify Plone 5 Uninstall"
         directory="profiles/plone5uninstall"
-        description="MMockup pattern for jquery tocify. Uninstallation for Plone 5"
+        description="A tocify pattern for Plone (pat-tocify). Uninstallation for Plone 5"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
   </configure>
@@ -46,16 +46,16 @@
   <configure zcml:condition="not-have plone-5">
     <gs:registerProfile
         name="default"
-        title="mockup.tocify Plone 4 Install"
+        title="collective.tocify Plone 4 Install"
         directory="profiles/plone4"
-        description="Mockup pattern for jquery tocify. Installation for Plone 4"
+        description="A tocify pattern for Plone (pat-tocify). Installation for Plone 4"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
     <gs:registerProfile
         name="uninstall"
-        title="mockup.tocify Plone 4 Uninstall"
+        title="collective.tocify Plone 4 Uninstall"
         directory="profiles/plone4uninstall"
-        description="Mockup pattern for jquery tocify. Uninstallation for Plone 4"
+        description="A tocify pattern for Plone (pat-tocify). Uninstallation for Plone 4"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
   </configure>
