@@ -1,7 +1,21 @@
-include *.rst
-recursive-include src *
-prune collective/tocify/js/bower_components
-prune collective/tocify/js/build
 exclude .bowerrc
 exclude Makefile
 global-exclude *.pyc
+include *.rst
+include *.json
+include *.txt
+include buildout-plone4.cfg
+include buildout.cfg
+prune collective/tocify/js/bower_components
+prune collective/tocify/js/build
+prune collective/tocify/js/node_modules
+prune collective/tocify/js/coverage
+recursive-include collective *.css
+recursive-include collective *.html
+recursive-include collective *.js
+recursive-include collective *.jshintrc
+recursive-include collective *.less
+recursive-include collective *.pt
+recursive-include collective *.xml
+recursive-include collective *.zcml
+recursive-include src *

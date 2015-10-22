@@ -1,13 +1,9 @@
 from setuptools import find_packages
 from setuptools import setup
-import json
-
-package_json = json.load(open('package.json'))
-version = package_json['version']
 
 setup(
     name='collective.tocify',
-    version=version,
+    version="0.0.1",
     description="A plone package to integrate the tocify pattern (pat-tocify)",
     long_description='{0}\n{1}'.format(
         open("README.rst").read(),

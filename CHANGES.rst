@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0 (unreleased)
-----------------
+0.0.1 (unreleased)
+------------------
 
 - Add basic tocify pattern [allcaps, instification]
